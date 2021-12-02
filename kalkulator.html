@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator</title>
+    <script>
+        function dodawanie() {
+            let a=Number(document.getElementById("a").value);
+            let b=Number(document.getElementById("b").value);
+            let suma=a+b
+            document.write(suma)
+        }
+        function odejmowanie() {
+            let a=Number(document.getElementById("a").value);
+            let b=Number(document.getElementById("b").value);
+            let roznica=a-b
+            document.write(roznica)
+        }
+        function mnozenie() {
+            let a=Number(document.getElementById("a").value);
+            let b=Number(document.getElementById("b").value);
+            let iloczyn=a*b
+            document.write(iloczyn)
+        }
+        function dzielenie() {
+            let a=Number(document.getElementById("a").value);
+            let b=Number(document.getElementById("b").value);
+            let iloraz=a/b
+            document.write(iloraz)
+        }
+    </script>
+</head>
+<body>
+    <input type="number" id="a"> <br>
+    <input type="number" id="b"> <br>
+    <input type="submit" value="Dodawanie" onclick="dodawanie()">
+    <input type="submit" value="Odejmwoanie" onclick="odejmowanie()">
+    <input type="submit" value="Mnożenie" onclick="mnozenie()">
+    <input type="submit" value="Dzielenie" onclick="dzielenie()">
+</body>
+</html>
